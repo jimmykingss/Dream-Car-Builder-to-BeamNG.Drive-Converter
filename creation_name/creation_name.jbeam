@@ -1,0 +1,26 @@
+{
+"creation_name": {
+    "information":{
+        "authors":"JimmyKing",
+        "name":"creation_name",
+    },
+    "slotType" : "main",
+    "slots": [
+        ["type", "default", "description"],
+        //bodywork
+        ["dream_car_xml","dream_car_xml", "Frame", {"coreSlot":true}],
+        ["licenseplate_design_2_1","","License Plate Design"],
+        ["creation_name_mod", "", "Additional Modification"],
+    ],
+
+    "scaledragCoef":1.5,
+
+    //"scalenodeWeight":    0.875,
+    //"scalebeamSpring":    0.875,
+    //"scalebeamDamp":      0.875,
+    //"scalebeamDeform":    0.875,
+    //"scalebeamStrength":  0.875,
+
+    
+},
+}

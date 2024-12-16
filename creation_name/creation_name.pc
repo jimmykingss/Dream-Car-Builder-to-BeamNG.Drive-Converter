@@ -1,0 +1,8 @@
+{
+  "format":2,
+  "mainPartName":"creation_name",
+  "model":"creation_name",
+  "parts":{
+    "dream_car_xml":"dream_car_xml",
+  },
+}
