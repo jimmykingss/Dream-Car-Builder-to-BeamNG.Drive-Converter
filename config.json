@@ -1,0 +1,49 @@
+{
+"dream_car_xml": {
+    "information":{
+        "authors":"Name",
+        "name":"ConvertedVehicle",
+        "value":0,
+    },
+    "slotType" : "dream_car_xml",
+    "refNodes":[
+    ["ref:", "back:", "left:", "up:"]
+        ["seatp1", "clr", "seatp0", "cur"],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"group":""},
+         ["Node go here", {"nodeWeight":"Weight"}],
+         //camera reference nodes
+         ["cur", 0.1785714503, -0.5499999883, -0.05, {"nodeWeight":0.5}],
+         ["clr", -0.05, -0.5499999883, -0.3, {"nodeWeight":0.5}],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          ["Beam go here", {"beamDeform":"Elastic","beamSpring":"Hardness","beamDamp":"Dampness","beamStrength":"Strength"}],
+
+          //camera reference beams
+          {"beamDeform":"FLT_MAX","beamSpring":200000,"beamDamp":100,"beamStrength":"FLT_MAX"},
+          ["cur", "seatp1"],
+          ["cur", "seatp0"],
+          ["cur", "seatp2"],
+          ["clr", "seatp1"],
+          ["clr", "seatp0"],
+          ["cur", "clr"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+},
+}
+
+"ShockPart":{
+          {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":56000,"beamStrength":245000},
+          {"beamSpring":"ShockPartHardness","beamDamp":"ShockPartDamping"},
+          "ShockPart Beam go here"
+          }
